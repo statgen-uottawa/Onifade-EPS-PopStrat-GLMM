@@ -1,1 +1,16 @@
+This folder contains the files for simulating the files for the additional simualtions runs from 1000 to 2000. We start with the 1000 EPS individuals simulated from a larger cohort of 5000 individuals. The order of files running is:
+- Run GMMATifilesim.R using GMMAT.sh
+- Remember to pass through the R script to normalise the kinship matrix. Write a shell script for this process as well. Location for the kinship matrix and normalising is: 
+
+Location for obtaining the GRM from GEMMA to be used by GMMAT
+
+/global/home/hpc4298/GEMMA-0.98/myexample/my_sim_output
+
+Normalising covariance matrices produced by GEMMA in output folder
+
+/global/home/hpc4298/GEMMA-0.98/myexample/my_sim_output/sim11/output
+
+- Run GMMAT_R.R using the shell script GMMAT_score.sh    
+
+Last shell script is another version of shell script for running GMMAT_filessim.R
 
